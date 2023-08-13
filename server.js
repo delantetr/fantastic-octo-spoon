@@ -32,6 +32,15 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+  const idToDelete = parseInt(req.params.id);
+  console.log('NoteId:', idToDelete);
+  const updatedNotes = notes.filter(note => note.id !== idToDelete);
+  fs.writeFileSync('./db/db.json', JSON.stringify(updatedNotes));
+  res.json({ message: 'Note deleted successfully' });
+});
+
+
 // Start the server--------------------------------------------
 
 app.listen(PORT, () =>
