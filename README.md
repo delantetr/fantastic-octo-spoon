@@ -18,5 +18,5 @@
 
   ## Questions
   If you have any questions I can be reached at delantetr@gmail.com.
-  Github: https://github.com/delantetr/studious-succotash
+  Github: https://github.com/delantetr/fantastic-octo-spoon
   Live URL: https://delantetr.github.io/studious-succotash/
